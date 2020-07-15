@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Dog</title>
+    <style>
+
+        body{
+            background-color: #f4f6ff ;
+            color: #ea907a;
+            padding-left: 50px;
+        }
+
+
+        main{
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        img{
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+            border: solid 7px #ea907a;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #ea907a;
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        a{
+            color: #fff;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+
+        <h1>Random Dog</h1>
+
+        <div>
+            <img src="" data-js="dog-img" alt="A random Dog image">
+        </div>
+
+        <button onClick="window.location.reload()">New Image</button>
+        <a href="" data-js="download-img" download="">
+            <button>
+                Download
+            </button>
+        </a>
+
+    </main>
+    <script src="random-dog.js"></script>
+</body>
+</html>
